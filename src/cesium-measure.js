@@ -141,7 +141,7 @@
                                 if (cartographic.height < 0) cartographic.height = 0;
                                 let lon = Cesium.Math.toDegrees(cartographic.longitude)
                                     , lat = Cesium.Math.toDegrees(cartographic.latitude)
-                                    , height = cartographic.height;//模型高度 
+                                    , height = cartographic.height;// 高度 
                                 cartesian = this.transformWGS84ToCartesian({ lng: lon, lat: lat, alt: height })
 
                             }
